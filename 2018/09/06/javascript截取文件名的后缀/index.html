@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <title>javascript截取文件名的后缀 | 前端笔记 (front-end)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="12345678const fileName=&quot;text.png&quot;;//带.的格式let fileFormat=fileName.substring(fileName.lastIndexOf(&apos;.&apos;))// 不带.的格式let fileFormat2=fileName.substring(fileName.lastIndexOf(&apos;.&apos;)+1);console.log(fileFormat,fil">
+<meta name="keywords" content="js代码片段">
+<meta property="og:type" content="article">
+<meta property="og:title" content="javascript截取文件名的后缀">
+<meta property="og:url" content="https://qt92.github.io/2018/09/06/javascript截取文件名的后缀/index.html">
+<meta property="og:site_name" content="前端笔记 (front-end)">
+<meta property="og:description" content="12345678const fileName=&quot;text.png&quot;;//带.的格式let fileFormat=fileName.substring(fileName.lastIndexOf(&apos;.&apos;))// 不带.的格式let fileFormat2=fileName.substring(fileName.lastIndexOf(&apos;.&apos;)+1);console.log(fileFormat,fil">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://user-images.githubusercontent.com/22697565/45154907-b8d2b080-b20b-11e8-944d-3adde64b69dd.png">
+<meta property="og:updated_time" content="2018-09-30T10:53:42.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="javascript截取文件名的后缀">
+<meta name="twitter:description" content="12345678const fileName=&quot;text.png&quot;;//带.的格式let fileFormat=fileName.substring(fileName.lastIndexOf(&apos;.&apos;))// 不带.的格式let fileFormat2=fileName.substring(fileName.lastIndexOf(&apos;.&apos;)+1);console.log(fileFormat,fil">
+<meta name="twitter:image" content="https://user-images.githubusercontent.com/22697565/45154907-b8d2b080-b20b-11e8-944d-3adde64b69dd.png">
+  
+    <link rel="alternate" href="/atom.xml" title="前端笔记 (front-end)" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">前端笔记 (front-end)</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">欢迎投稿，投稿QQ：786758593(邮箱同Q)</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://qt92.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-javascript截取文件名的后缀" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/06/javascript截取文件名的后缀/" class="article-date">
+  <time datetime="2018-09-06T11:22:37.000Z" itemprop="datePublished">2018-09-06</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/前端/">前端</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      javascript截取文件名的后缀
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> fileName=<span class="string">"text.png"</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//带.的格式</span></span><br><span class="line"><span class="keyword">let</span> fileFormat=fileName.substring(fileName.lastIndexOf(<span class="string">'.'</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment">// 不带.的格式</span></span><br><span class="line"><span class="keyword">let</span> fileFormat2=fileName.substring(fileName.lastIndexOf(<span class="string">'.'</span>)+<span class="number">1</span>);</span><br><span class="line"><span class="built_in">console</span>.log(fileFormat,fileFormat2)</span><br></pre></td></tr></table></figure>
+<p><img src="https://user-images.githubusercontent.com/22697565/45154907-b8d2b080-b20b-11e8-944d-3adde64b69dd.png" alt="image"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://qt92.github.io/2018/09/06/javascript截取文件名的后缀/" data-id="cjnhgoupw000ilwlop5u342jf" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js代码片段/">js代码片段</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/09/07/使用hexo搭建github-io博客/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          使用hexo搭建github.io博客
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/09/03/移动端限制input框只能输入数字/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">移动端限制input框只能输入数字</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo教程/">Hexo教程</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/优质文章分享/">优质文章分享</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/">前端</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端周刊/">前端周刊</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/好文分享/">好文分享</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/html5/">html5</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js代码片段/">js代码片段</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node/">node</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/npm/">npm</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/react/">react</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/优质文章分享/">优质文章分享</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/分享/">分享</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/前端自动化/">前端自动化</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/开发规范/">开发规范</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/html5/" style="font-size: 10px;">html5</a> <a href="/tags/js代码片段/" style="font-size: 20px;">js代码片段</a> <a href="/tags/node/" style="font-size: 10px;">node</a> <a href="/tags/npm/" style="font-size: 10px;">npm</a> <a href="/tags/react/" style="font-size: 16.67px;">react</a> <a href="/tags/优质文章分享/" style="font-size: 13.33px;">优质文章分享</a> <a href="/tags/分享/" style="font-size: 16.67px;">分享</a> <a href="/tags/前端自动化/" style="font-size: 10px;">前端自动化</a> <a href="/tags/开发规范/" style="font-size: 10px;">开发规范</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/10/20/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2018/09/30/前端开发最全面试题/">前端开发最全面试题</a>
+          </li>
+        
+          <li>
+            <a href="/2018/09/28/redux入门/">redux入门</a>
+          </li>
+        
+          <li>
+            <a href="/2018/09/21/JS 数组克隆方法总结/">JS 数组克隆方法总结</a>
+          </li>
+        
+          <li>
+            <a href="/2018/09/21/前端周刊-2018年09月第3周/">前端周刊-2018年09月第3周</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 QT<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
