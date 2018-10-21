@@ -1,11 +1,41 @@
 <!DOCTYPE html>
-<html>
-<head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="utf-8">
-  
-  <title>React Js 微信分享封装 | 前端笔记 (front-end)</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<html lang="">
+  <head><meta name="generator" content="Hexo 3.8.0">
+    
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1">
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
   <meta name="description" content="本篇文章给大家分享的内容是代码详解React Js 微信分享封装，有着一定的参考价值，有需要的朋友可以参考一下 话不多说，直接上源代码：">
+
+
+
+
+  <meta name="keywords" content="react,">
+
+
+
+
+
+  <link rel="alternate" href="/default" title="前端笔记 (front-end)">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=1.1">
+
+
+
+<link rel="canonical" href="https://qt92.github.io/2018/09/03/React-Js-微信分享封装/">
+
+
+<meta name="description" content="本篇文章给大家分享的内容是代码详解React Js 微信分享封装，有着一定的参考价值，有需要的朋友可以参考一下 话不多说，直接上源代码：">
 <meta name="keywords" content="react">
 <meta property="og:type" content="article">
 <meta property="og:title" content="React Js 微信分享封装">
@@ -17,227 +47,174 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="React Js 微信分享封装">
 <meta name="twitter:description" content="本篇文章给大家分享的内容是代码详解React Js 微信分享封装，有着一定的参考价值，有需要的朋友可以参考一下 话不多说，直接上源代码：">
-  
-    <link rel="alternate" href="/atom.xml" title="前端笔记 (front-end)" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
+
+
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=1.1">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+
+
+
+<script type="text/javascript">
+  var themeConfig = {
+    fancybox: {
+      enable: false
+    },
+  };
+</script>
+
+
+
+
   
 
-</head>
-</html>
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">前端笔记 (front-end)</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">欢迎投稿，投稿QQ：786758593(邮箱同Q)</a>
-        </h2>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://qt92.github.io"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main"><article id="post-React-Js-微信分享封装" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/09/03/React-Js-微信分享封装/" class="article-date">
-  <time datetime="2018-09-03T07:17:54.000Z" itemprop="datePublished">2018-09-03</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/前端/">前端</a>
-  </div>
 
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      React Js 微信分享封装
+
+    <title> React Js 微信分享封装 - 前端笔记 (front-end) </title>
+  </head>
+
+  <body>
+    <div id="page">
+      <header id="masthead"><div class="site-header-inner">
+    <h1 class="site-title">
+        <a href="/." class="logo">前端笔记 (front-end)</a>
     </h1>
-  
+
+    <nav id="nav-top">
+        
+            <ul id="menu-top" class="nav-top-items">
+                
+                    <li class="menu-item">
+                        <a href="/archives">
+                            
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li class="menu-item">
+                        <a href="/about">
+                            
+                            
+                                About
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        
+  </nav>
+</div>
 
       </header>
+      <div id="content">
+        
+    <div id="primary">
+        
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          React Js 微信分享封装
+        
+      </h1>
+
+      <time class="post-time">
+          Sep 03 2018
+      </time>
+    </header>
+
+
+
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="Introductions"><a href="#Introductions" class="headerlink" title="Introductions"></a>Introductions</h2><p>本篇文章给大家分享的内容是代码详解React Js 微信分享封装，有着一定的参考价值，有需要的朋友可以参考一下 话不多说，直接上源代码：</p>
+            <div class="post-content">
+            <h2 id="Introductions"><a href="#Introductions" class="headerlink" title="Introductions"></a>Introductions</h2><p>本篇文章给大家分享的内容是代码详解React Js 微信分享封装，有着一定的参考价值，有需要的朋友可以参考一下 话不多说，直接上源代码：</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="分享功能"><a href="#分享功能" class="headerlink" title="分享功能"></a>分享功能</h3><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Fetch <span class="keyword">from</span> <span class="string">'./FetchIt'</span>;</span><br><span class="line"><span class="keyword">import</span> API_URL <span class="keyword">from</span> <span class="string">'./url'</span>;</span><br><span class="line"><span class="keyword">import</span> Share <span class="keyword">from</span> <span class="string">'./Share'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> wxUtils = &#123;&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//////////////////////////////////////////////////////////////////////////////////////</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">// 分享</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//////////////////////////////////////////////////////////////////////////////////////</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> getshareinfo?type=</span></span><br><span class="line"><span class="comment"> type :goods 课程详情 team 团详情</span></span><br><span class="line"><span class="comment"> id 课程id</span></span><br><span class="line"><span class="comment"> tid 团ID</span></span><br><span class="line"><span class="comment"> * @param config</span></span><br><span class="line"><span class="comment"> * @param shareInfo &#123;imgUrl,title,description,link&#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">share2wx</span>(<span class="params">config, shareInfo</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">const</span> share = <span class="keyword">new</span> Share(&#123;</span><br><span class="line">        appid: config.appid, <span class="comment">// 必填，公众号的唯一标识</span></span><br><span class="line">        timestamp: config.timestamp, <span class="comment">// 必填，生成签名的时间戳</span></span><br><span class="line">        nonceStr: config.nonceStr, <span class="comment">// 必填，生成签名的随机串</span></span><br><span class="line">        signature: config.signature, <span class="comment">// 必填，签名</span></span><br><span class="line">    &#125;);</span><br><span class="line">    share.init(<span class="built_in">Object</span>.assign(&#123;&#125;, shareInfo));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getConfig</span>(<span class="params">shareInfo</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">let</span> href = <span class="built_in">window</span>.location.href.split(<span class="string">'#'</span>)[<span class="number">0</span>];</span><br><span class="line">    <span class="keyword">const</span> url = <span class="built_in">encodeURIComponent</span>(href <span class="comment">/*window.location.href*/</span>);</span><br><span class="line">    Fetch.get(<span class="string">`<span class="subst">$&#123;API_URL.mobile.signature_path&#125;</span>?url=<span class="subst">$&#123;url&#125;</span>`</span>).then(<span class="function"><span class="params">data</span> =&gt;</span> &#123;</span><br><span class="line">        share2wx(data, shareInfo);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * @param shareInfo</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line">wxUtils.share = <span class="function"><span class="keyword">function</span> (<span class="params">shareInfo</span>) </span>&#123;</span><br><span class="line">    getConfig(shareInfo);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">//////////////////////////////////////////////////////////////////////////////////////</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">// 分享结束</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//////////////////////////////////////////////////////////////////////////////////////</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 是否开启右上角Menu</span></span><br><span class="line"><span class="comment"> * @param open</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line">wxUtils.optionMenu = <span class="function"><span class="keyword">function</span> (<span class="params">open = true</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (open) &#123;</span><br><span class="line">        openOptionMenu();</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        disabledOptionMenu();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 是否禁用右上角</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">disabledOptionMenu</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">typeof</span> WeixinJSBridge === <span class="string">"undefined"</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">document</span>.addEventListener) &#123;</span><br><span class="line">            <span class="built_in">document</span>.addEventListener(<span class="string">'WeixinJSBridgeReady'</span>, onBridgeReady(<span class="literal">true</span>), <span class="literal">false</span>);</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (<span class="built_in">document</span>.attachEvent) &#123;</span><br><span class="line">            <span class="built_in">document</span>.attachEvent(<span class="string">'WeixinJSBridgeReady'</span>, onBridgeReady(<span class="literal">true</span>));</span><br><span class="line">            <span class="built_in">document</span>.attachEvent(<span class="string">'onWeixinJSBridgeReady'</span>, onBridgeReady(<span class="literal">true</span>));</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        onBridgeReady(<span class="literal">true</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 开启menu</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">openOptionMenu</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">typeof</span> WeixinJSBridge === <span class="string">"undefined"</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">document</span>.addEventListener) &#123;</span><br><span class="line">            <span class="built_in">document</span>.addEventListener(<span class="string">'WeixinJSBridgeReady'</span>, onBridgeReady(<span class="literal">false</span>), <span class="literal">false</span>);</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (<span class="built_in">document</span>.attachEvent) &#123;</span><br><span class="line">            <span class="built_in">document</span>.attachEvent(<span class="string">'WeixinJSBridgeReady'</span>, onBridgeReady(<span class="literal">false</span>));</span><br><span class="line">            <span class="built_in">document</span>.attachEvent(<span class="string">'onWeixinJSBridgeReady'</span>, onBridgeReady(<span class="literal">false</span>));</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        onBridgeReady(<span class="literal">false</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">onBridgeReady</span>(<span class="params">disable = true</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">typeof</span> WeixinJSBridge !== <span class="string">"undefined"</span>) WeixinJSBridge.call(disable ? <span class="string">'hideOptionMenu'</span> : <span class="string">'showOptionMenu'</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 隐藏微信网页底部的导航栏</span></span><br><span class="line"><span class="comment"> * @param disable</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line">wxUtils.disabledToolbar = <span class="function"><span class="keyword">function</span> (<span class="params">disable = true</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">document</span>.addEventListener(<span class="string">'WeixinJSBridgeReady'</span>, <span class="function"><span class="keyword">function</span> <span class="title">onBridgeReady</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="comment">// 通过下面这个API隐藏底部导航栏</span></span><br><span class="line">        WeixinJSBridge.call(disable ? <span class="string">'hideToolbar'</span> : <span class="string">'showToolbar'</span>);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> wxUtils;</span><br></pre></td></tr></table></figure>
 <h3 id="分享配置"><a href="#分享配置" class="headerlink" title="分享配置"></a>分享配置</h3><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 分享</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Share</span>(<span class="params">config</span>) </span>&#123;</span><br><span class="line">    wx.config(&#123;</span><br><span class="line">        debug: <span class="literal">false</span>, <span class="comment">// 开启调试模式</span></span><br><span class="line">        appId: config.appid, <span class="comment">// 必填，公众号的唯一标识</span></span><br><span class="line">        timestamp: config.timestamp, <span class="comment">// 必填，生成签名的时间戳</span></span><br><span class="line">        nonceStr: config.nonceStr, <span class="comment">// 必填，生成签名的随机串</span></span><br><span class="line">        signature: config.signature, <span class="comment">// 必填，签名，见附录1</span></span><br><span class="line">        jsApiList: [<span class="string">'onMenuShareTimeline'</span>, <span class="string">'onMenuShareAppMessage'</span>, <span class="string">'onMenuShareWeibo'</span>], <span class="comment">// 必填，需要使用的JS接口列表，所有JS接口列表见附录2</span></span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Share.prototype = &#123;</span><br><span class="line">    <span class="keyword">constructor</span>: Share,</span><br><span class="line"></span><br><span class="line">    init(config) &#123;</span><br><span class="line">        <span class="keyword">this</span>.imgUrl = config.imgUrl;</span><br><span class="line">        <span class="keyword">this</span>.link = config.link;</span><br><span class="line">        <span class="comment">// this.musicPath = config.musicPath;</span></span><br><span class="line">        <span class="keyword">this</span>.description = config.description;</span><br><span class="line">        <span class="keyword">this</span>.title = config.title;</span><br><span class="line"></span><br><span class="line">        wx.ready(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">            <span class="comment">// if (this.musicPath) &#123;</span></span><br><span class="line">            <span class="comment">//     document.getElementById('musicIcon').play();</span></span><br><span class="line">            <span class="comment">// &#125;</span></span><br><span class="line">            <span class="keyword">this</span>.toFriend();</span><br><span class="line">            <span class="keyword">this</span>.toTimeline();</span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line">        wx.error(<span class="function"><span class="params">res</span> =&gt;</span> &#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="string">`<span class="subst">$&#123;res&#125;</span>`</span>);</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    toFriend() &#123;</span><br><span class="line">        wx.onMenuShareAppMessage(&#123;</span><br><span class="line">            imgUrl: <span class="keyword">this</span>.imgUrl,</span><br><span class="line">            link: <span class="keyword">this</span>.link,</span><br><span class="line">            title: <span class="keyword">this</span>.title,</span><br><span class="line">            desc: <span class="keyword">this</span>.description,</span><br><span class="line">            success: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">                <span class="comment">// 用户确认分享后执行的回调函数</span></span><br><span class="line">            &#125;,</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    toTimeline() &#123;</span><br><span class="line">        wx.onMenuShareTimeline(&#123;</span><br><span class="line">            imgUrl: <span class="keyword">this</span>.imgUrl,</span><br><span class="line">            link: <span class="keyword">this</span>.link,</span><br><span class="line">            title: <span class="keyword">this</span>.title,</span><br><span class="line">            desc: <span class="keyword">this</span>.description,</span><br><span class="line">            success: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">                <span class="comment">// 用户确认分享后执行的回调函数</span></span><br><span class="line">            &#125;,</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;,</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> Share;</span><br></pre></td></tr></table></figure>
 <h3 id="开启分享"><a href="#开启分享" class="headerlink" title="开启分享"></a>开启分享</h3><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//开启分享</span></span><br><span class="line">BaseComponent.wxUtils.optionMenu(<span class="literal">true</span>);</span><br><span class="line">BaseComponent.wxUtils.share(&#123;</span><br><span class="line">    imgUrl: activityData.sharePicUrl,</span><br><span class="line">    title: activityData.shareTitle,</span><br><span class="line">    description: activityData.shareContent,</span><br><span class="line">    link: url,</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://qt92.github.io/2018/09/03/React-Js-微信分享封装/" data-id="cjnhgoup2000dlwlofhpizrvi" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/react/">react</a></li></ul>
+            </div>
+          
 
-    </footer>
-  </div>
-  
     
-<nav id="article-nav">
-  
-    <a href="/2018/09/03/移动端限制input框只能输入数字/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
+      <footer class="post-footer">
+		
+		<div class="post-tags">
+		  
+			<a href="/tags/react/">react</a>
+		  
+		</div>
+		
+
         
-          移动端限制input框只能输入数字
         
+  <nav class="post-nav">
+    
+      <a class="prev" href="/2018/09/03/移动端限制input框只能输入数字/">
+        <i class="iconfont icon-left"></i>
+        <span class="prev-text nav-default">移动端限制input框只能输入数字</span>
+        <span class="prev-text nav-mobile">Prev</span>
+      </a>
+    
+    
+      <a class="next" href="/2018/08/30/错误码：events-js-183-throw-er-Unhandled-error-event—解决办法/">
+        <span class="next-text nav-default">错误码：events.js:183 throw er; // Unhandled 'error' event—解决办法</span>
+        <span class="prev-text nav-mobile">Next</span>
+        <i class="iconfont icon-right"></i>
+      </a>
+    
+  </nav>
+
+        
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+      </footer>
+    
+  </article>
+
+    </div>
+
       </div>
-    </a>
-  
-  
-    <a href="/2018/08/30/错误码：events-js-183-throw-er-Unhandled-error-event—解决办法/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">错误码：events.js:183 throw er; // Unhandled &#39;error&#39; event—解决办法</div>
-    </a>
-  
-</nav>
 
-  
-</article>
-
-</section>
-        
-          <aside id="sidebar">
-  
+      <footer id="colophon"><span class="copyright-year">
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo教程/">Hexo教程</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/优质文章分享/">优质文章分享</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端/">前端</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/前端周刊/">前端周刊</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/好文分享/">好文分享</a></li></ul>
-    </div>
-  </div>
-
-
-  
+        &copy;
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/html5/">html5</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js代码片段/">js代码片段</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/node/">node</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/npm/">npm</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/react/">react</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/优质文章分享/">优质文章分享</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/分享/">分享</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/前端自动化/">前端自动化</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/开发规范/">开发规范</a></li></ul>
-    </div>
-  </div>
-
-
-  
+        2014 -
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/html5/" style="font-size: 10px;">html5</a> <a href="/tags/js代码片段/" style="font-size: 20px;">js代码片段</a> <a href="/tags/node/" style="font-size: 10px;">node</a> <a href="/tags/npm/" style="font-size: 10px;">npm</a> <a href="/tags/react/" style="font-size: 16.67px;">react</a> <a href="/tags/优质文章分享/" style="font-size: 13.33px;">优质文章分享</a> <a href="/tags/分享/" style="font-size: 16.67px;">分享</a> <a href="/tags/前端自动化/" style="font-size: 10px;">前端自动化</a> <a href="/tags/开发规范/" style="font-size: 10px;">开发规范</a>
-    </div>
-  </div>
+    2018
+    <span class="footer-author">QT.</span>
+    <span class="power-by">
+        Powered by <a class="hexo-link" href="https://hexo.io/">Hexo</a> and <a class="theme-link" href="https://github.com/frostfan/hexo-theme-polarbear">Polar Bear</a>
+    </span>
+</span>
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">August 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a></li></ul>
-    </div>
-  </div>
+      </footer>
 
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2018/10/20/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/2018/09/30/前端开发最全面试题/">前端开发最全面试题</a>
-          </li>
-        
-          <li>
-            <a href="/2018/09/28/redux入门/">redux入门</a>
-          </li>
-        
-          <li>
-            <a href="/2018/09/21/JS 数组克隆方法总结/">JS 数组克隆方法总结</a>
-          </li>
-        
-          <li>
-            <a href="/2018/09/21/前端周刊-2018年09月第3周/">前端周刊-2018年09月第3周</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
       </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2018 QT<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+    
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 
-<script src="/js/script.js"></script>
+  
+    <script type="text/javascript" src="/lib/jquery/jquery-3.1.1.min.js"></script>
+  
 
-  </div>
-</body>
+  
+
+    <script type="text/javascript" src="/js/src/theme.js?v=1.1"></script>
+<script type="text/javascript" src="/js/src/bootstrap.js?v=1.1"></script>
+
+  </body>
 </html>
