@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="">
+  <head><meta name="generator" content="Hexo 3.8.0">
+    
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1">
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+  <meta name="description" content="错误码：events.js:183 throw er; // Unhandled 'error' event—解决办法">
+
+
+
+
+  <meta name="keywords" content="npm,">
+
+
+
+
+
+  <link rel="alternate" href="/default" title="前端笔记 (front-end)">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=1.1">
+
+
+
+<link rel="canonical" href="https://qt92.github.io/2018/08/30/错误码：events-js-183-throw-er-Unhandled-error-event—解决办法/">
+
+
+<meta name="description" content="控制台报错：12345678910111213141516171819202122232425Hash: 78f0873c3eb47a64bfaeVersion: webpack 1.14.0Time: 16mswebpack: Compiled successfully.events.js:183      throw er; // Unhandled &amp;apos;error&amp;apos; eve">
+<meta name="keywords" content="npm">
+<meta property="og:type" content="article">
+<meta property="og:title" content="错误码：events.js:183 throw er; &#x2F;&#x2F; Unhandled &#39;error&#39; event—解决办法">
+<meta property="og:url" content="https://qt92.github.io/2018/08/30/错误码：events-js-183-throw-er-Unhandled-error-event—解决办法/index.html">
+<meta property="og:site_name" content="前端笔记 (front-end)">
+<meta property="og:description" content="控制台报错：12345678910111213141516171819202122232425Hash: 78f0873c3eb47a64bfaeVersion: webpack 1.14.0Time: 16mswebpack: Compiled successfully.events.js:183      throw er; // Unhandled &amp;apos;error&amp;apos; eve">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-09-30T10:53:42.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="错误码：events.js:183 throw er; &#x2F;&#x2F; Unhandled &#39;error&#39; event—解决办法">
+<meta name="twitter:description" content="控制台报错：12345678910111213141516171819202122232425Hash: 78f0873c3eb47a64bfaeVersion: webpack 1.14.0Time: 16mswebpack: Compiled successfully.events.js:183      throw er; // Unhandled &amp;apos;error&amp;apos; eve">
+
+
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=1.1">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+
+
+
+<script type="text/javascript">
+  var themeConfig = {
+    fancybox: {
+      enable: false
+    },
+  };
+</script>
+
+
+
+
+  
+
+
+
+    <title> 错误码：events.js:183 throw er; // Unhandled 'error' event—解决办法 - 前端笔记 (front-end) </title>
+  </head>
+
+  <body>
+    <div id="page">
+      <header id="masthead"><div class="site-header-inner">
+    <h1 class="site-title">
+        <a href="/." class="logo">前端笔记 (front-end)</a>
+    </h1>
+
+    <nav id="nav-top">
+        
+            <ul id="menu-top" class="nav-top-items">
+                
+                    <li class="menu-item">
+                        <a href="/archives">
+                            
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li class="menu-item">
+                        <a href="/about">
+                            
+                            
+                                About
+                            
+                        </a>
+                    </li>
+                
+                    <li class="menu-item">
+                        <a href="https://github.com/qt92/qt92.github.io">
+                            
+                            
+                                Github
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        
+  </nav>
+</div>
+
+      </header>
+      <div id="content">
+        
+    <div id="primary">
+        
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          错误码：events.js:183 throw er; // Unhandled 'error' event—解决办法
+        
+      </h1>
+
+      <time class="post-time">
+          Aug 30 2018
+      </time>
+    </header>
+
+
+
+    
+            <div class="post-content">
+            <h4 id="控制台报错："><a href="#控制台报错：" class="headerlink" title="控制台报错："></a>控制台报错：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">Hash: 78f0873c3eb47a64bfae</span><br><span class="line">Version: webpack 1.14.0</span><br><span class="line">Time: 16ms</span><br><span class="line">webpack: Compiled successfully.</span><br><span class="line">events.js:183</span><br><span class="line">      throw er; // Unhandled &apos;error&apos; event</span><br><span class="line">      ^</span><br><span class="line"></span><br><span class="line">Error: listen EADDRINUSE 127.0.0.1:8080</span><br><span class="line">    at Object._errnoException (util.js:1022:11)</span><br><span class="line">    at _exceptionWithHostPort (util.js:1044:20)</span><br><span class="line">    at Server.setupListenHandle [as _listen2] (net.js:1367:14)</span><br><span class="line">    at listenInCluster (net.js:1408:12)</span><br><span class="line">    at GetAddrInfoReqWrap.doListen [as callback] (net.js:1517:7)</span><br><span class="line">    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:97:10)</span><br><span class="line">npm ERR! code ELIFECYCLE</span><br><span class="line">npm ERR! errno 1</span><br><span class="line">npm ERR! webpack-demos@1.0.0 dev: `webpack-dev-server --devtool eval --progress --colors`</span><br><span class="line">npm ERR! Exit status 1</span><br><span class="line">npm ERR!</span><br><span class="line">npm ERR! Failed at the webpack-demos@1.0.0 dev script.</span><br><span class="line">npm ERR! This is probably not a problem with npm. There is likely additional logging output above.</span><br><span class="line"></span><br><span class="line">npm ERR! A complete log of this run can be found in:</span><br><span class="line">npm ERR!     C:\Users\qian\AppData\Roaming\npm-cache\_logs\2018-08-30T14_46_37_546Z-debug.log</span><br></pre></td></tr></table></figure>
+<h4 id="错误原因："><a href="#错误原因：" class="headerlink" title="错误原因："></a>错误原因：</h4><p>端口号被占用</p>
+<h4 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h4><p>1.Win+R,cmd查询使用的端口号是否被占用：<br>netstat  -aon|findstr  “8080”<br>按回车显示占用8080端口对应的程序的PID号；<br>2.根据PID号找到对应的程序：继续输入命令：<br>tasklist|findstr “15008”<br>按回车后显示出占用该端口的程序；<br>3.按快捷键“Ctrl+Shift+Esc”调出Windows任务管理器，根据PID/<br>程序对应名称结束该程序进程即可。</p>
+
+            </div>
+          
+
+    
+      <footer class="post-footer">
+		
+		<div class="post-tags">
+		  
+			<a href="/tags/npm/">npm</a>
+		  
+		</div>
+		
+
+        
+        
+  <nav class="post-nav">
+    
+      <a class="prev" href="/2018/09/03/React-Js-微信分享封装/">
+        <i class="iconfont icon-left"></i>
+        <span class="prev-text nav-default">React Js 微信分享封装</span>
+        <span class="prev-text nav-mobile">Prev</span>
+      </a>
+    
+    
+      <a class="next" href="/2018/08/30/合并数组的相同的key值，并且计算相同key值的个数/">
+        <span class="next-text nav-default">合并数组的相同的key值，并且计算相同key值的个数</span>
+        <span class="prev-text nav-mobile">Next</span>
+        <i class="iconfont icon-right"></i>
+      </a>
+    
+  </nav>
+
+        
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+      </footer>
+    
+  </article>
+
+    </div>
+
+      </div>
+
+      <footer id="colophon"><span class="copyright-year">
+    
+        &copy;
+    
+        2014 -
+    
+    2018
+    <span class="footer-author">QT.</span>
+    <span class="power-by">
+        Powered by <a class="hexo-link" href="https://hexo.io/">Hexo</a> and <a class="theme-link" href="https://github.com/frostfan/hexo-theme-polarbear">Polar Bear</a>
+    </span>
+</span>
+
+      </footer>
+
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div>
+    
+
+
+    
+
+
+
+
+  
+    <script type="text/javascript" src="/lib/jquery/jquery-3.1.1.min.js"></script>
+  
+
+  
+
+    <script type="text/javascript" src="/js/src/theme.js?v=1.1"></script>
+<script type="text/javascript" src="/js/src/bootstrap.js?v=1.1"></script>
+
+  </body>
+</html>

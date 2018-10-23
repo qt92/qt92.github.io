@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="">
+  <head><meta name="generator" content="Hexo 3.8.0">
+    
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1">
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+  <meta name="description" content="在安卓端设置input类型为number，可限制键盘只输入数字，在ios端，要加入pattern验证输入字段的模式，才能限制数字输入">
+
+
+
+
+  <meta name="keywords" content="html5,">
+
+
+
+
+
+  <link rel="alternate" href="/default" title="前端笔记 (front-end)">
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=1.1">
+
+
+
+<link rel="canonical" href="https://qt92.github.io/2018/09/03/移动端限制input框只能输入数字/">
+
+
+<meta name="description" content="在安卓端设置input类型为number，可限制键盘只输入数字，在ios端，要加入pattern验证输入字段的模式，才能限制数字输入">
+<meta name="keywords" content="html5">
+<meta property="og:type" content="article">
+<meta property="og:title" content="移动端限制input框只能输入数字">
+<meta property="og:url" content="https://qt92.github.io/2018/09/03/移动端限制input框只能输入数字/index.html">
+<meta property="og:site_name" content="前端笔记 (front-end)">
+<meta property="og:description" content="在安卓端设置input类型为number，可限制键盘只输入数字，在ios端，要加入pattern验证输入字段的模式，才能限制数字输入">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-09-30T10:53:42.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="移动端限制input框只能输入数字">
+<meta name="twitter:description" content="在安卓端设置input类型为number，可限制键盘只输入数字，在ios端，要加入pattern验证输入字段的模式，才能限制数字输入">
+
+
+<link rel="stylesheet" type="text/css" href="/css/style.css?v=1.1">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+
+
+
+<script type="text/javascript">
+  var themeConfig = {
+    fancybox: {
+      enable: false
+    },
+  };
+</script>
+
+
+
+
+  
+
+
+
+    <title> 移动端限制input框只能输入数字 - 前端笔记 (front-end) </title>
+  </head>
+
+  <body>
+    <div id="page">
+      <header id="masthead"><div class="site-header-inner">
+    <h1 class="site-title">
+        <a href="/." class="logo">前端笔记 (front-end)</a>
+    </h1>
+
+    <nav id="nav-top">
+        
+            <ul id="menu-top" class="nav-top-items">
+                
+                    <li class="menu-item">
+                        <a href="/archives">
+                            
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li class="menu-item">
+                        <a href="/about">
+                            
+                            
+                                About
+                            
+                        </a>
+                    </li>
+                
+                    <li class="menu-item">
+                        <a href="https://github.com/qt92/qt92.github.io">
+                            
+                            
+                                Github
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        
+  </nav>
+</div>
+
+      </header>
+      <div id="content">
+        
+    <div id="primary">
+        
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        
+          移动端限制input框只能输入数字
+        
+      </h1>
+
+      <time class="post-time">
+          Sep 03 2018
+      </time>
+    </header>
+
+
+
+    
+            <div class="post-content">
+            <p>html5 中，input 的 type 属性规定 input 元素的类型。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"value"</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>有很多选项，详细可以参考<a href="http://www.w3school.com.cn/html5/att_input_type.asp" target="_blank" rel="noopener">HTML 5 type 属性</a></p>
+<p>但是在移动端，还要区分是安卓用户，还是ios用户，所以这样写：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">class</span>=<span class="string">"num_input"</span> <span class="attr">type</span>=<span class="string">'number'</span> <span class="attr">pattern</span>=<span class="string">"[0-9]*"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<p>在安卓端设置input类型为number，可限制键盘只输入数字，在ios端，要加入pattern验证输入字段的模式，才能限制数字输入。</p>
+<p>另： <code>autofocus=&quot;autofocus&quot;</code>可以自动对焦。</p>
+
+            </div>
+          
+
+    
+      <footer class="post-footer">
+		
+		<div class="post-tags">
+		  
+			<a href="/tags/html5/">html5</a>
+		  
+		</div>
+		
+
+        
+        
+  <nav class="post-nav">
+    
+      <a class="prev" href="/2018/09/06/javascript截取文件名的后缀/">
+        <i class="iconfont icon-left"></i>
+        <span class="prev-text nav-default">javascript截取文件名的后缀</span>
+        <span class="prev-text nav-mobile">Prev</span>
+      </a>
+    
+    
+      <a class="next" href="/2018/09/03/React-Js-微信分享封装/">
+        <span class="next-text nav-default">React Js 微信分享封装</span>
+        <span class="prev-text nav-mobile">Next</span>
+        <i class="iconfont icon-right"></i>
+      </a>
+    
+  </nav>
+
+        
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+      </footer>
+    
+  </article>
+
+    </div>
+
+      </div>
+
+      <footer id="colophon"><span class="copyright-year">
+    
+        &copy;
+    
+        2014 -
+    
+    2018
+    <span class="footer-author">QT.</span>
+    <span class="power-by">
+        Powered by <a class="hexo-link" href="https://hexo.io/">Hexo</a> and <a class="theme-link" href="https://github.com/frostfan/hexo-theme-polarbear">Polar Bear</a>
+    </span>
+</span>
+
+      </footer>
+
+      <div class="back-to-top" id="back-to-top">
+        <i class="iconfont icon-up"></i>
+      </div>
+    </div>
+    
+
+
+    
+
+
+
+
+  
+    <script type="text/javascript" src="/lib/jquery/jquery-3.1.1.min.js"></script>
+  
+
+  
+
+    <script type="text/javascript" src="/js/src/theme.js?v=1.1"></script>
+<script type="text/javascript" src="/js/src/bootstrap.js?v=1.1"></script>
+
+  </body>
+</html>
