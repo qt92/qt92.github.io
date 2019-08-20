@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <title>
     
-      category: 好文分享 | NaCha&#39;s blog
+      category: 好文分享 | Jerry&#39;s blog
     
   </title>
   <meta name="author" content="NaCha">
@@ -65,33 +65,33 @@
 				<ul>
 	
 		<li class="menu-home">
-			<a href="/" class="menu-item-home">Home</a>
+			<a href="/" class="menu-item-home">主页</a>
 		</li>
 	
 		<li class="menu-archive">
-			<a href="/archives" class="menu-item-archive">Archive</a>
+			<a href="/archives" class="menu-item-archive">归档</a>
 		</li>
 	
 		<li class="menu-categories">
-			<a href="/categories" class="menu-item-categories">Category</a>
+			<a href="/categories" class="menu-item-categories">分类</a>
 		</li>
 	
 		<li class="menu-tags">
-			<a href="/tags" class="menu-item-tags">Tag</a>
+			<a href="/tags" class="menu-item-tags">标签</a>
 		</li>
 	
 		<li class="menu-about">
-			<a href="/about" class="menu-item-about">About</a>
+			<a href="/about" class="menu-item-about">关于</a>
 		</li>
 	
 		<li class="menu-gallery">
-			<a href="/gallery" class="menu-item-gallery">Gallery</a>
+			<a href="/gallery" class="menu-item-gallery">相册</a>
 		</li>
 	
 
 	
 		<li class="menu-search">
-			<a href="javascript:;" class="popup-trigger">Search</a>
+			<a href="javascript:;" class="popup-trigger">搜索</a>
 		</li>
 	
 </ul>
@@ -159,12 +159,12 @@
 	<!-- Progress percent -->
 	<div id="progress-percentage"><h1>0.0%</h1></div>
 
-	<div class="toc-switch"><span class="switch-button">Catalog</span></div>
+	<div class="toc-switch"><span class="switch-button">目录</span></div>
 
 	<!-- Page title -->
 	<p>
 		
-			Category
+			分类
 		
 	</p>
 
@@ -182,33 +182,33 @@
 		<ul>
 	
 		<li class="menu-home">
-			<a href="/" class="menu-item-home">Home</a>
+			<a href="/" class="menu-item-home">主页</a>
 		</li>
 	
 		<li class="menu-archive">
-			<a href="/archives" class="menu-item-archive">Archive</a>
+			<a href="/archives" class="menu-item-archive">归档</a>
 		</li>
 	
 		<li class="menu-categories">
-			<a href="/categories" class="menu-item-categories">Category</a>
+			<a href="/categories" class="menu-item-categories">分类</a>
 		</li>
 	
 		<li class="menu-tags">
-			<a href="/tags" class="menu-item-tags">Tag</a>
+			<a href="/tags" class="menu-item-tags">标签</a>
 		</li>
 	
 		<li class="menu-about">
-			<a href="/about" class="menu-item-about">About</a>
+			<a href="/about" class="menu-item-about">关于</a>
 		</li>
 	
 		<li class="menu-gallery">
-			<a href="/gallery" class="menu-item-gallery">Gallery</a>
+			<a href="/gallery" class="menu-item-gallery">相册</a>
 		</li>
 	
 
 	
 		<li class="menu-search">
-			<a href="javascript:;" class="popup-trigger">Search</a>
+			<a href="javascript:;" class="popup-trigger">搜索</a>
 		</li>
 	
 </ul>
@@ -272,7 +272,7 @@
 
 	
 	
-	好文分享 1 pian
+	好文分享 1 篇
 		
 
 		</i>
@@ -761,6 +761,23 @@
 		<div class="local-search-footer">
 			<div class="topN-post">				
 				
+
+   
+	<div id="topN">
+		<div class="topN-title" data-title= "热门文章"></div> 
+	</div>
+	
+    <script>
+        var appid = '001',
+            appkey = 'kscq',
+            limitCount = 10;
+        if( $('#topN').length ){
+            AV.initialize(appid, appkey);
+            var Counter = AV.Object.extend("Counter");  
+            topNPost(Counter, limitCount);
+        }
+    </script>
+   
 								
 			</div>
 		</div>
